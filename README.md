@@ -1,4 +1,4 @@
-# java-web-maven-blade-hello-world
+# java-web-bazel-blade-hello-world
 
 ## Description
 A POC for blade framework rendering html page.
@@ -7,7 +7,7 @@ A POC for blade framework rendering html page.
 - cors
 
 ## Docker stack
-- maven:3-openjdk-17
+- l.gcr.io/google/bazel:latest
 
 ## To run
 `sudo ./install.sh -u`

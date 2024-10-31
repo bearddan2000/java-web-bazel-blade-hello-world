@@ -1,9 +1,9 @@
-FROM maven:3-openjdk-17
+FROM l.gcr.io/google/bazel:latest
 
-WORKDIR /usr/src/mymaven
+WORKDIR  /src/workspace
 
 COPY bin .
 
-ENTRYPOINT ["mvn"]
+RUN bazel clean
 
-CMD ["clean", "install", "compile", "exec:java"]
+CMD ["run", "//src/main:BazelApp"]
